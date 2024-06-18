@@ -1,0 +1,29 @@
+{
+    "name": "lunarharry/keep-sake-cards",
+    "authors": [
+        {
+            "name": "Harry Gardiner Lunar",
+            "email": "harry@lunar.build"
+        }
+    ],
+   "require": {
+        "composer/installers": "^2.0.2",
+        "wpackagist-theme/storefront": "^4.6.0",
+        "wpackagist-plugin/woocommerce": "^8.9.3"
+    },
+   "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": [
+        "wpackagist-plugin/*",
+        "wpackagist-theme/*"
+      ]
+    }
+  ],
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}
