@@ -9,7 +9,8 @@
    "require": {
         "composer/installers": "^2.0.2",
         "wpackagist-theme/storefront": "^4.6.0",
-        "wpackagist-plugin/woocommerce": "^8.9.3"
+        "wpackagist-plugin/woocommerce": "^8.9.3",
+        "wpackagist-theme/boutique": "^2.0"
     },
    "repositories": [
     {
