@@ -22,17 +22,17 @@
 }
 
 body {
-    font-family: 'Khula', sans-serif;
+    font-family: $primary-font;
     color: $primary-text;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: $secondary-font;
     color: $primary-text;
 }
 
 .button {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: $secondary-font;
     font-weight: 700;
     font-size: 13px;
     text-transform: uppercase;
