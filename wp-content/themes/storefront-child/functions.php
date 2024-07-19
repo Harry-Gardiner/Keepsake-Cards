@@ -30,31 +30,33 @@ add_filter('upload_mimes', 'add_svg_to_upload_mimes');
  *
  */
 
-// Remove the original storefront site branding action
-function ksc_remove_default_branding() {
-    remove_action('storefront_header', 'storefront_site_branding', 20);
-}
+// // Remove the original storefront site branding action
+// function ksc_remove_default_branding() {
+//     remove_action('storefront_header', 'storefront_site_branding', 20);
+// }
+// add_action('init', 'ksc_remove_default_branding');
 
-// Hook into 'init' to ensure all theme functions are loaded and can be removed.
-add_action('init', 'ksc_remove_default_branding');
+// // Custom site branding
+// function ksc_heading_branding() {
+//     echo '<div class="site-branding">';
+//     if (has_custom_logo()) {
+//         the_custom_logo();
+//     } else {
+//         echo '<div class="site-logo">
+//             <a href="' . esc_url(home_url('/')) . '" rel="home">
+//                 <img src="' . get_stylesheet_directory_uri() . '/images/default-logo.png" alt="' . get_bloginfo('name') . '">
+//             </a>
+//         </div>';
+//     }
+//     echo '<div class="site-title">
+//             <a href="' . esc_url(home_url('/')) . '" rel="home">' . get_bloginfo('name') . '</a>
+//         </div>
+//     </div>';
+// }
+// add_action('storefront_header', 'ksc_heading_branding', 20);
 
-// Add your custom site branding action
-function ksc_heading_branding() {
-    echo '<div class="site-branding">';
-    if (has_custom_logo()) {
-        the_custom_logo();
-    } else {
-        echo '<div class="site-logo">
-            <a href="' . esc_url(home_url('/')) . '" rel="home">
-                <img src="' . get_stylesheet_directory_uri() . '/images/default-logo.png" alt="' . get_bloginfo('name') . '">
-            </a>
-        </div>';
-    }
-    echo '<div class="site-title">
-            <a href="' . esc_url(home_url('/')) . '" rel="home">' . get_bloginfo('name') . '</a>
-        </div>
-    </div>';
-}
-
-// Add your custom function to the same hook with the same priority as the original
-add_action('storefront_header', 'ksc_heading_branding', 20);
+// // Remove search TODO: work back in
+// function ksc_remove_search() {
+//     remove_action('storefront_header', 'storefront_product_search', 40);
+// }
+// add_action('init', 'ksc_remove_search');
