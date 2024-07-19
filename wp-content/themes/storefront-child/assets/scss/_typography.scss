@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 @font-face {
     font-family: 'Cormorant Garamond';
     src: url('assets/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf') format('ttf');
@@ -21,10 +23,12 @@
 
 body {
     font-family: 'Khula', sans-serif;
+    color: $primary-text;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Cormorant Garamond', serif;
+    color: $primary-text;
 }
 
 .button {
