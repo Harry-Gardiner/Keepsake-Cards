@@ -10,3 +10,13 @@ $white: #FFFFFF;
 
 $primary-font: 'Khula', sans-serif;
 $secondary-font: 'Cormorant Garamond', serif;
+
+// create spacing variables in REM xs to xxxl individually
+$spacing-xxs: 0.25rem;
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;
+$spacing-xxl: 4rem;
+$spacing-xxxl: 5rem;

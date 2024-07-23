@@ -1,22 +1,28 @@
-@use 'variables' as *;
-@use 'media-queries';
+@use "variables" as *;
+@use "media-queries";
 
 .site-header {
-    background-color: $white;
+	background-color: $white;
 
-    .ks-site-branding {
-        display: flex;
-        
-        .site-branding {
-            float: none;
-            width: unset;
-            margin: 0;
-            width: 60px;
-            height: 60px;
-        }
+	.ks-site-branding {
+		display: flex;
+		align-items: center;
+		gap: $spacing-xs;
 
-        .site-title {
-            
-        }
-    }
+		.site-branding {
+			float: none;
+			width: unset;
+			margin: 0;
+			width: 40px;
+			height: 40px;
+		}
+
+		.site-title {
+			font-family: $secondary-font;
+
+			.keepsake {
+				color: $primary-pink;
+			}
+		}
+	}
 }

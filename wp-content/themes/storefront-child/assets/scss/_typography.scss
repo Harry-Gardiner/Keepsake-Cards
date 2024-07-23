@@ -2,33 +2,33 @@
 @use "media-queries" as mq;
 
 @font-face {
-  font-family: "Cormorant Garamond";
-  src: url("assets/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf")
-    format("ttf");
-  font-weight: normal;
-  font-style: normal;
+	font-family: "Cormorant Garamond";
+	src: url("assets/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf")
+		format("ttf");
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: "Cormorant Garamond";
-  src: url("assets/fonts/Cormorant_Garamond/CormorantGaramond-Bold.ttf")
-    format("ttf");
-  font-weight: bold;
-  font-style: normal;
+	font-family: "Cormorant Garamond";
+	src: url("assets/fonts/Cormorant_Garamond/CormorantGaramond-Bold.ttf")
+		format("ttf");
+	font-weight: bold;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: "Khula";
-  src: url("assets/fonts/Khula/Khula-Regular.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
+	font-family: "Khula";
+	src: url("assets/fonts/Khula/Khula-Regular.ttf") format("ttf");
+	font-weight: normal;
+	font-style: normal;
 }
 
 body {
-  font-family: $primary-font;
-  color: $primary-text;
-  font-size: 16px; /* Base font size */
-  line-height: 1.5;
+	font-family: $primary-font;
+	color: $primary-text;
+	font-size: 16px; /* Base font size */
+	line-height: 1.5;
 }
 
 h1,
@@ -37,190 +37,199 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $secondary-font;
-  color: $primary-text;
+	font-family: $secondary-font;
+	color: $primary-text;
 }
 
 .button {
-  font-family: $secondary-font;
-  font-weight: 700;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+	font-family: $secondary-font;
+	font-weight: 700;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
 }
 
 h1,
 .h1 {
-  font-size: 36px;
-  line-height: 1.2;
+	font-size: 28px;
+	line-height: 1.2;
 }
 
 h2,
 .h2 {
-  font-size: 30px;
-  line-height: 1.3;
+	font-size: 24px;
+	line-height: 1.3;
 }
 
 h3,
 .h3 {
-  font-size: 24px;
-  line-height: 1.4;
+	font-size: 20px;
+	line-height: 1.4;
 }
 
 h4,
 .h4 {
-  font-size: 20px;
-  line-height: 1.5;
+	font-size: 18px;
+	line-height: 1.5;
 }
 
 h5,
 .h5 {
-  font-size: 18px;
-  line-height: 1.6;
+	font-size: 16px;
+	line-height: 1.6;
 }
 
 h6,
 .h6 {
-  font-size: 16px;
-  line-height: 1.6;
+	font-size: 14px;
+	line-height: 1.6;
 }
 
 .product-title {
-  font-size: 20px;
-  font-weight: bold;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 .product-price {
-  font-size: 22px;
+	font-size: 22px;
 }
 
 .product-description {
-  font-size: 14px;
+	font-size: 14px;
 }
 
 .nav-menu a {
-  font-size: 16px;
+	font-size: 16px;
 }
 
 .footer {
-  font-size: 14px;
+	font-size: 14px;
 }
 
 .button,
 .cta {
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 @include mq.media-breakpoint(md) {
-  /* Tablet styles */
+	/* Tablet styles */
 
-  body {
-    font-size: 17px;
-  }
+	body {
+		font-size: 17px;
+	}
 
-  h1 {
-    font-size: 32px;
-  }
+	h1,
+	.h1 {
+		font-size: 32px;
+	}
 
-  h2 {
-    font-size: 28px;
-  }
+	h2,
+	.h2 {
+		font-size: 28px;
+	}
 
-  h3 {
-    font-size: 24px;
-  }
+	h3,
+	.h3 {
+		font-size: 24px;
+	}
 
-  h4 {
-    font-size: 20px;
-  }
+	h4,
+	.h4 {
+		font-size: 20px;
+	}
 
-  h5 {
-    font-size: 18px;
-  }
+	h5,
+	.h5 {
+		font-size: 18px;
+	}
 
-  h6 {
-    font-size: 16px;
-  }
+	h6,
+	.h6 {
+		font-size: 16px;
+	}
 
-  .product-title {
-    font-size: 20px;
-  }
+	.product-title {
+		font-size: 20px;
+	}
 
-  .product-price {
-    font-size: 22px;
-  }
+	.product-price {
+		font-size: 22px;
+	}
 
-  .product-description {
-    font-size: 15px;
-  }
+	.product-description {
+		font-size: 15px;
+	}
 
-  .nav-menu a {
-    font-size: 15px;
-  }
+	.nav-menu a {
+		font-size: 15px;
+	}
 
-  .footer {
-    font-size: 14px;
-  }
+	.footer {
+		font-size: 14px;
+	}
 
-  .button,
-  .cta {
-    font-size: 16px;
-  }
+	.button,
+	.cta {
+		font-size: 16px;
+	}
 }
 
 @include mq.media-breakpoint(lg) {
-    /* Desktop styles */ 
-    body {
-        font-size: 18px;
-    }
+	/* Desktop styles */
+	body {
+		font-size: 18px;
+	}
 
-    h1 {
-        font-size: 36px;
-    }
+	h1,
+	.h1 {
+		font-size: 36px;
+	}
 
-    h2 {
-        font-size: 32px;
-    }
+	h2,
+	.h2 {
+		font-size: 32px;
+	}
 
-    h3 {
-        font-size: 28px;
-    }
+	h3,
+	.h3 {
+		font-size: 28px;
+	}
 
-    h4 {
-        font-size: 24px;
-    }
+	h4,
+	.h4 {
+		font-size: 24px;
+	}
 
-    h5 {
-        font-size: 20px;
-    }
+	h5,
+	.h5 {
+		font-size: 20px;
+	}
 
-    h6 {
-        font-size: 18px;
-    }
+	h6,
+	.h6 {
+		font-size: 18px;
+	}
 
-    .product-title {
-        font-size: 22px;
-    }
+	.product-title {
+		font-size: 22px;
+	}
 
-    .product-price {
-        font-size: 24px;
-    }
+	.product-price {
+		font-size: 24px;
+	}
 
-    .product-description {
-        font-size: 16px;
-    }
+	.product-description {
+		font-size: 16px;
+	}
 
-    .nav-menu a {
-        font-size: 16px;
-    }
+	.nav-menu a {
+		font-size: 16px;
+	}
 
-    .footer {
-        font-size: 14px;
-    }
-
-    .button, .cta {
-        font-size: 18px;
-    }
+	.button,
+	.cta {
+		font-size: 18px;
+	}
 }

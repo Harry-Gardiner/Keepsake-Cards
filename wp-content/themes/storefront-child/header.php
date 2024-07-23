@@ -34,7 +34,7 @@
 				<?php
 					storefront_site_branding();
 				?>
-				<div class="site-title h2">
+				<div class="site-title h1">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						<span class="keepsake">Keepsake</span> <span class="cards">Cards</span>
 					</a>

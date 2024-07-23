@@ -4,40 +4,50 @@
 /// @return {*} - The retrieved value.
 @function map-deep-get($map, $keys...) {
 	@each $key in $keys {
-	  $map: map-get($map, $key);
+		$map: map-get($map, $key);
 	}
 	@return $map;
-  }
+}
 
 $breakpoints: (
-	xxs: (breakpoint: 0px,
+	xxs: (
+		breakpoint: 0px,
 		max-width: 100%,
 	),
-	xs: (breakpoint: 375px,
+	xs: (
+		breakpoint: 375px,
 		max-width: 360px,
 	),
-	sm: (breakpoint: 576px,
+	sm: (
+		breakpoint: 576px,
 		max-width: 540px,
 	),
-	md: (breakpoint: 768px,
+	md: (
+		breakpoint: 768px,
 		max-width: 720px,
 	),
-	lg: (breakpoint: 992px,
+	lg: (
+		breakpoint: 992px,
 		max-width: 960px,
 	),
-	lg-tablet: (breakpoint: 1024px,
+	lg-tablet: (
+		breakpoint: 1024px,
 		max-width: 990px,
 	),
-	xl: (breakpoint: 1200px,
+	xl: (
+		breakpoint: 1200px,
 		max-width: 1140px,
 	),
-	xxl: (breakpoint: 1400px,
+	xxl: (
+		breakpoint: 1400px,
 		max-width: 1360px,
 	),
-	xxxl: (breakpoint: 1500px,
+	xxxl: (
+		breakpoint: 1500px,
 		// max-width: 1360px,
 	),
-	4xl: (breakpoint: 1700px,
+	4xl: (
+		breakpoint: 1700px,
 		// max-width: 1360px,
 	),
 );
