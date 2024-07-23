@@ -60,3 +60,36 @@ add_filter('upload_mimes', 'add_svg_to_upload_mimes');
 //     remove_action('storefront_header', 'storefront_product_search', 40);
 // }
 // add_action('init', 'ksc_remove_search');
+
+
+
+
+// function customize_storefront_header() {
+//     remove_action( 'storefront_header', 'storefront_display_logo', 20 );
+//     remove_action( 'storefront_header', 'storefront_cart_link', 60 );
+    
+//     // Step 3: Rehook the functions to your custom actions or directly in header.php
+//     // For direct execution in header.php, you can skip this step
+//     add_action( 'custom_storefront_site_branding', 'storefront_display_logo' );
+//     add_action( 'custom_storefront_header_cart', 'storefront_cart_link' );
+// }
+
+// add_action( 'init', 'customize_storefront_header' );
+
+
+/**
+ * @snippet       WooCommerce Disable Default CSS
+ * @how-to        Get CustomizeWoo.com FREE
+ * @author        Rodolfo Melogli
+ * @compatible    WooCommerce 8
+ * @community     https://businessbloomer.com/club/
+*/
+ 
+// function wpcustom_deregister__styles(){
+//     wp_deregister_style('storefront-woocommerce-style');
+//     wp_deregister_style('storefront-style');
+// }
+// add_action( 'wp_print_styles', 'wpcustom_deregister__styles', 100 );
+
+
+// add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );

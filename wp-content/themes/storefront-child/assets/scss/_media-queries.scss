@@ -1,0 +1,55 @@
+/// Retrieves a value from a nested map.
+/// @param {Map} $map - The map to retrieve the value from.
+/// @param {ArgList} $keys - The sequence of keys to follow in the map.
+/// @return {*} - The retrieved value.
+@function map-deep-get($map, $keys...) {
+	@each $key in $keys {
+	  $map: map-get($map, $key);
+	}
+	@return $map;
+  }
+
+$breakpoints: (
+	xxs: (breakpoint: 0px,
+		max-width: 100%,
+	),
+	xs: (breakpoint: 375px,
+		max-width: 360px,
+	),
+	sm: (breakpoint: 576px,
+		max-width: 540px,
+	),
+	md: (breakpoint: 768px,
+		max-width: 720px,
+	),
+	lg: (breakpoint: 992px,
+		max-width: 960px,
+	),
+	lg-tablet: (breakpoint: 1024px,
+		max-width: 990px,
+	),
+	xl: (breakpoint: 1200px,
+		max-width: 1140px,
+	),
+	xxl: (breakpoint: 1400px,
+		max-width: 1360px,
+	),
+	xxxl: (breakpoint: 1500px,
+		// max-width: 1360px,
+	),
+	4xl: (breakpoint: 1700px,
+		// max-width: 1360px,
+	),
+);
+
+@mixin media-breakpoint($breakpoint, $property: min-width) {
+	@if ($property == "max-width") {
+		@media ($property: calc(#{map-deep-get($breakpoints, $breakpoint, breakpoint)} - 1px)) {
+			@content;
+		}
+	} @else {
+		@media ($property: map-deep-get($breakpoints, $breakpoint, breakpoint)) {
+			@content;
+		}
+	}
+}

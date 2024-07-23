@@ -1,5 +1,22 @@
 @use 'variables' as *;
+@use 'media-queries';
 
 .site-header {
     background-color: $white;
+
+    .ks-site-branding {
+        display: flex;
+        
+        .site-branding {
+            float: none;
+            width: unset;
+            margin: 0;
+            width: 60px;
+            height: 60px;
+        }
+
+        .site-title {
+            
+        }
+    }
 }
