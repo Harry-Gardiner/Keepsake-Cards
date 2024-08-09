@@ -200,26 +200,33 @@ h6,
     font-size: 18px;
   }
 }
-.site-header {
+.ks-site-header {
   background-color: #FFFFFF;
 }
-.site-header .ks-site-branding {
+.ks-site-header .ks-site-branding {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  width: 100%;
 }
-.site-header .ks-site-branding .site-branding {
+.ks-site-header .ks-site-branding .site-branding {
   float: none;
   width: unset;
   margin: 0;
   width: 40px;
   height: 40px;
 }
-.site-header .ks-site-branding .site-title {
+.ks-site-header .ks-site-branding .site-title {
   font-family: "Cormorant Garamond", serif;
 }
-.site-header .ks-site-branding .site-title .keepsake {
+.ks-site-header .ks-site-branding .site-title .keepsake {
   color: #E57373;
+}
+.ks-site-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */

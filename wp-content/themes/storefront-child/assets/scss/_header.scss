@@ -1,13 +1,14 @@
 @use "variables" as *;
 @use "media-queries";
 
-.site-header {
+.ks-site-header {
 	background-color: $white;
 
 	.ks-site-branding {
 		display: flex;
 		align-items: center;
 		gap: $spacing-xs;
+		width: 100%;
 
 		.site-branding {
 			float: none;
@@ -24,5 +25,13 @@
 				color: $primary-pink;
 			}
 		}
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		
+		position: relative;
 	}
 }

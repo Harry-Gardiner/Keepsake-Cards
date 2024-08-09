@@ -27,17 +27,24 @@
 <div id="page" class="hfeed site">
 	<?php do_action( 'storefront_before_header' ); ?>
 
-	<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
+	<header id="masthead" class="site-header ks-site-header" role="banner" style="<?php storefront_header_styles(); ?>">
 		
 		<div class="col-full">
-			<div class="ks-site-branding">
-				<?php
-					storefront_site_branding();
-				?>
-				<div class="site-title h1">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<span class="keepsake">Keepsake</span> <span class="cards">Cards</span>
-					</a>
+			<div class="ks-site-header__wrapper">
+				<div class="ks-site-branding">
+					<?php
+						storefront_site_branding();
+					?>
+					<div class="site-title h1">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<span class="keepsake">Keepsake</span> <span class="cards">Cards</span>
+						</a>
+					</div>
+				</div>
+				<div class="ks-site-header__nav">
+					<?php
+						storefront_primary_navigation();
+					?>
 				</div>
 			</div>
 		</div>
